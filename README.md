@@ -6,8 +6,6 @@ Adobe Photoshop · MoggyDay · 2026 · v27.11
 
 # Adobe Photoshop 2026 “Pro for Windows: Camera Raw, Neural Filters, Russian UI” [v27.11]
 
-[Free download](https://moggydayprogram.com/en/programs/adobe-photoshop) · [Скачать](https://moggydayprogram.com/programs/adobe-photoshop) · [Adobe catalog hub](https://moggydayprogram.com/collections/adobe)
-
 <p>
   <a href="https://moggydayprogram.com/programs/adobe-photoshop"><img src="docs/media/about.png" alt="Adobe Photoshop about" width="280"></a>
   <a href="https://moggydayprogram.com/programs/adobe-photoshop"><img src="docs/media/file-open.png" alt="Adobe Photoshop File menu" width="280"></a>
