@@ -1,8 +1,7 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
   <script>
     (function () {
       function pick() {
@@ -30,209 +29,294 @@
       document.documentElement.setAttribute("data-lang", lang);
     })();
   </script>
-  <meta name="description" content="Adobe Photoshop for Windows 10 and 11: system requirements, MoggyDay Launcher setup, shortcuts. Catalog: moggydayprogram.com" />
-  <meta name="keywords" content="Adobe Photoshop, Photoshop Windows, Photoshop Russian, graphic editor, Camera Raw, MoggyDay Launcher, moggydayprogram.com, Photoshop for Windows" />
-  <meta property="og:title" content="Adobe Photoshop for Windows — guide and MoggyDay Launcher" />
-  <meta property="og:description" content="Requirements, catalog install, workflow tips. Official site: moggydayprogram.com" />
-  <meta property="og:url" content="https://moggydayprogram.com/" />
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:locale:alternate" content="ru_RU" />
-  <link rel="canonical" href="https://moggydayprogram.com/" />
-  <link rel="alternate" hreflang="en" href="https://soldermofitting.github.io/adobe-photoshop-windows/?lang=en" />
-  <link rel="alternate" hreflang="ru" href="https://soldermofitting.github.io/adobe-photoshop-windows/?lang=ru" />
-  <link rel="alternate" hreflang="x-default" href="https://soldermofitting.github.io/adobe-photoshop-windows/" />
-  <title>Adobe Photoshop for Windows — guide | MoggyDay</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <title>Adobe Photoshop 2026 v27.11 for Windows — MoggyDay</title>
+  <meta name="description" content="Adobe Photoshop 2026 (v27.11) for Windows: Camera Raw, Neural Filters, Russian UI. Catalog card and MoggyDay Launcher on moggydayprogram.com">
+  <meta name="keywords" content="Adobe Photoshop, Photoshop 2026, Photoshop Windows, Photoshop Russian, Camera Raw, Neural Filters, MoggyDay Launcher, moggydayprogram.com">
+  <link rel="canonical" href="https://moggydayprogram.com/programs/adobe-photoshop">
+  <link rel="alternate" hreflang="en" href="https://soldermofitting.github.io/adobe-photoshop-windows/?lang=en">
+  <link rel="alternate" hreflang="ru" href="https://soldermofitting.github.io/adobe-photoshop-windows/?lang=ru">
+  <link rel="alternate" hreflang="x-default" href="https://soldermofitting.github.io/adobe-photoshop-windows/">
+  <meta property="og:title" content="Adobe Photoshop 2026 v27.11 for Windows — MoggyDay">
+  <meta property="og:description" content="Layers, Camera Raw, Neural Filters. Open the Photoshop card on moggydayprogram.com">
+  <meta property="og:url" content="https://moggydayprogram.com/programs/adobe-photoshop">
+  <meta property="og:image" content="https://soldermofitting.github.io/adobe-photoshop-windows/media/about.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&family=IBM+Plex+Serif:wght@500;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #001e36;
-      --card: #0a2744;
-      --text: #e8f1fa;
-      --muted: #8ba3b8;
-      --accent: #31a8ff;
-      --accent-dark: #1473e6;
-      --border: #1e3a5f;
+      --ink: #10160f;
+      --panel: #172016;
+      --paper: #d7e2cf;
+      --lime: #c6e15a;
+      --mute: #8aa08a;
+      --line: #2a3828;
     }
     * { box-sizing: border-box; }
     body {
-      margin: 0;
-      font-family: "IBM Plex Sans", system-ui, sans-serif;
-      background: linear-gradient(165deg, var(--bg) 0%, #000814 100%);
-      color: var(--text);
-      line-height: 1.65;
-      min-height: 100vh;
+      margin: 0; background: var(--ink); color: var(--paper);
+      font: 17px/1.55 "IBM Plex Sans", system-ui, sans-serif;
     }
-    .wrap { max-width: 760px; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
-    h1 { font-size: 1.85rem; margin: 0 0 0.75rem; font-weight: 700; }
-    .lead { color: var(--muted); margin: 0 0 1.75rem; font-size: 1.05rem; }
-    .cta {
-      display: inline-block;
-      background: var(--accent);
-      color: #001018;
-      font-weight: 700;
-      text-decoration: none;
-      padding: 0.9rem 1.6rem;
-      border-radius: 8px;
-      margin: 0.25rem 0 2rem;
-      box-shadow: 0 4px 20px rgba(49, 168, 255, 0.35);
-    }
-    .cta:hover { background: var(--accent-dark); color: #fff; }
-    h2 { font-size: 1.2rem; margin-top: 2.25rem; color: var(--accent); }
-    table { width: 100%; border-collapse: collapse; margin: 1rem 0 1.5rem; font-size: 0.92rem; }
-    th, td { border: 1px solid var(--border); padding: 0.6rem 0.75rem; text-align: left; }
-    th { background: var(--card); }
-    ul, ol { padding-left: 1.25rem; }
-    footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.88rem; }
-    a { color: var(--accent); }
-    .badge { display: inline-block; background: var(--card); border: 1px solid var(--border); padding: 0.2rem 0.55rem; border-radius: 4px; font-size: 0.75rem; margin: 0.15rem 0.25rem 0.15rem 0; color: var(--muted); }
-    .lang-switch {
-      display: flex;
-      gap: 0.4rem;
-      margin: 0 0 1.5rem;
-    }
+    main { max-width: 980px; margin: 0 auto; padding: 28px 22px 72px; }
+    .lang-switch { display: flex; gap: 8px; margin: 0 0 18px; }
     .lang-switch button {
-      background: var(--card);
-      color: var(--muted);
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      padding: 0.35rem 0.75rem;
-      font: inherit;
-      font-size: 0.85rem;
-      cursor: pointer;
+      background: transparent; color: var(--paper); border: 1px solid var(--line);
+      font: inherit; font-weight: 700; padding: 8px 12px; cursor: pointer;
     }
     html[data-lang="en"] .lang-switch button[data-set-lang="en"],
     html[data-lang="ru"] .lang-switch button[data-set-lang="ru"] {
-      color: #001018;
-      background: var(--accent);
-      border-color: var(--accent);
+      background: var(--lime); color: var(--ink); border-color: var(--lime);
     }
+    header.hero {
+      display: grid; grid-template-columns: 168px 1fr; gap: 22px;
+      align-items: start; margin-bottom: 22px;
+    }
+    .poster img {
+      width: 168px; height: 210px; object-fit: cover; object-position: center top;
+      display: block; border: 1px solid var(--line); background: #0a0e09;
+    }
+    h1 {
+      font-family: "IBM Plex Serif", Georgia, serif;
+      font-size: clamp(26px, 4vw, 36px); line-height: 1.15;
+      margin: 0 0 10px; font-weight: 700;
+    }
+    .meta { color: var(--mute); font-size: 14px; margin: 0 0 14px; }
+    .cta { display: flex; flex-wrap: wrap; gap: 8px; }
+    .cta a {
+      display: inline-block; padding: 10px 14px; text-decoration: none;
+      font-weight: 700; color: var(--ink); background: var(--lime);
+    }
+    .cta a.ghost { background: transparent; color: var(--paper); border: 1px solid var(--line); }
+    .strip {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px;
+      margin: 8px 0 28px;
+    }
+    .strip a { color: var(--mute); font-size: 12px; text-decoration: none; }
+    .strip img { width: 100%; height: 110px; object-fit: cover; object-position: top; display: block; border: 1px solid var(--line); }
+    .strip span { display: block; margin-top: 4px; }
+    h2 {
+      font-family: "IBM Plex Serif", Georgia, serif;
+      font-size: 22px; margin: 32px 0 10px; font-weight: 700;
+    }
+    p, li { max-width: 68ch; }
+    a { color: var(--lime); }
+    table { width: 100%; border-collapse: collapse; margin: 8px 0 16px; }
+    th, td { text-align: left; padding: 7px 6px; border-bottom: 1px solid var(--line); }
+    .rels { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+    .rel { text-decoration: none; color: var(--paper); }
+    .rel-art {
+      width: 100%; aspect-ratio: 2/3; display: grid; place-items: center;
+      border: 1px solid var(--line); background: #0a0e09;
+    }
+    .rel-art img { width: 46%; height: auto; }
+    .rel b { display: block; margin-top: 6px; font-size: 13px; font-weight: 600; }
+    footer { margin-top: 40px; color: var(--mute); font-size: 13px; }
     [data-i18n] { display: none; }
     html[data-lang="ru"] [data-i18n="ru"],
     html[data-lang="en"] [data-i18n="en"] { display: block; }
+    @media (max-width: 720px) {
+      header.hero, .strip, .rels { grid-template-columns: 1fr 1fr; }
+      .poster img { width: 100%; height: auto; }
+    }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <nav class="lang-switch" aria-label="Language">
-      <button type="button" data-set-lang="en">English</button>
-      <button type="button" data-set-lang="ru">Русский</button>
-    </nav>
+<main>
+  <nav class="lang-switch" aria-label="Language">
+    <button type="button" data-set-lang="en">English</button>
+    <button type="button" data-set-lang="ru">Русский</button>
+  </nav>
 
-    <article data-i18n="en" lang="en">
-      <h1>Adobe Photoshop for Windows</h1>
-      <p class="lead">Retouch, layouts, Camera Raw, and print prep. The program card, a launcher with resume downloads, and RU / Intl mirrors live in the official catalog.</p>
-      <a class="cta" href="https://moggydayprogram.com/">Catalog and MoggyDay Launcher — moggydayprogram.com</a>
-      <p>
-        <span class="badge">photoshop</span>
-        <span class="badge">adobe</span>
-        <span class="badge">windows-11</span>
-        <span class="badge">image-editing</span>
-        <span class="badge">graphic-design</span>
-      </p>
-      <h2>System requirements</h2>
-      <table>
-        <tr><th>Item</th><th>Minimum</th><th>Comfortable</th></tr>
-        <tr><td>OS</td><td>Windows 10 x64</td><td>Windows 11 x64</td></tr>
-        <tr><td>RAM</td><td>8 GB</td><td>16–32 GB</td></tr>
-        <tr><td>Disk</td><td>SSD, free space for the app</td><td>Separate scratch disk</td></tr>
-        <tr><td>GPU</td><td>DirectX 12</td><td>4+ GB VRAM</td></tr>
-      </table>
-      <h2>Install with the launcher</h2>
-      <ol>
-        <li>Open <a href="https://moggydayprogram.com/">https://moggydayprogram.com/</a>.</li>
-        <li>Download and install <strong>MoggyDay Launcher</strong>.</li>
-        <li>Find <strong>Adobe Photoshop</strong> in the catalog.</li>
-        <li>Download the package (resume is supported) and follow the steps on the site card.</li>
-      </ol>
-      <h2>Why the launcher</h2>
-      <ul>
-        <li>One search across the catalog (Photoshop, Illustrator, Office, and more)</li>
-        <li>Download queue and pause</li>
-        <li>RU / Intl mirrors in Settings</li>
-      </ul>
-      <p>Use of catalog software must follow your country’s laws and the rights holders’ licenses.</p>
-      <footer>
-        Official catalog and launcher site:
-        <a href="https://moggydayprogram.com/">https://moggydayprogram.com/</a>
-        · GitHub Pages is a description mirror; builds come only from the MoggyDay site.
-      </footer>
-    </article>
-
-    <article data-i18n="ru" lang="ru">
-      <h1>Adobe Photoshop на Windows</h1>
-      <p class="lead">Ретушь, макеты, Camera Raw и подготовка к печати. Карточка программы, лаунчер с докачкой и зеркала RU / Intl — на официальном каталоге.</p>
-      <a class="cta" href="https://moggydayprogram.com/">Каталог и MoggyDay Launcher — moggydayprogram.com</a>
-      <p>
-        <span class="badge">photoshop</span>
-        <span class="badge">adobe</span>
-        <span class="badge">windows-11</span>
-        <span class="badge">image-editing</span>
-        <span class="badge">graphic-design</span>
-        <span class="badge">russian-ui</span>
-      </p>
-      <h2>Системные требования</h2>
-      <table>
-        <tr><th>Параметр</th><th>Минимум</th><th>Комфорт</th></tr>
-        <tr><td>ОС</td><td>Windows 10 x64</td><td>Windows 11 x64</td></tr>
-        <tr><td>ОЗУ</td><td>8 ГБ</td><td>16–32 ГБ</td></tr>
-        <tr><td>Диск</td><td>SSD, свободное место под программу</td><td>Отдельный scratch disk</td></tr>
-        <tr><td>GPU</td><td>DirectX 12</td><td>4+ ГБ VRAM</td></tr>
-      </table>
-      <h2>Установка через лаунчер</h2>
-      <ol>
-        <li>Откройте <a href="https://moggydayprogram.com/">https://moggydayprogram.com/</a>.</li>
-        <li>Скачайте и установите <strong>MoggyDay Launcher</strong>.</li>
-        <li>Найдите <strong>Adobe Photoshop</strong> в каталоге.</li>
-        <li>Загрузите дистрибутив (поддерживается докачка) и выполните шаги с карточки на сайте.</li>
-      </ol>
-      <h2>Зачем лаунчер</h2>
-      <ul>
-        <li>Единый поиск по каталогу (Photoshop, Illustrator, Office и др.)</li>
-        <li>Очередь загрузок и пауза</li>
-        <li>Зеркала RU / Intl в настройках</li>
-      </ul>
-      <p>Использование программ из каталога должно соответствовать законам вашей страны и лицензиям правообладателей.</p>
-      <footer>
-        Официальный сайт каталога и лаунчера:
-        <a href="https://moggydayprogram.com/">https://moggydayprogram.com/</a>
-        · GitHub Pages — зеркало описания; сборки только с сайта MoggyDay.
-      </footer>
-    </article>
+  <div data-i18n="en" lang="en">
+    <header class="hero">
+      <a class="poster" href="https://moggydayprogram.com/en/programs/adobe-photoshop"><img src="media/about.png" alt="Adobe Photoshop 2026 splash"></a>
+      <div>
+        <p class="meta">Adobe Photoshop · MoggyDay · 2026 · v27.11</p>
+        <h1>Adobe Photoshop 2026 “Pro for Windows: Camera Raw, Neural Filters, Russian UI” [v27.11]</h1>
+        <div class="cta">
+          <a href="https://moggydayprogram.com/en/programs/adobe-photoshop">Free download</a>
+          <a class="ghost" href="https://moggydayprogram.com/programs/adobe-photoshop">Скачать</a>
+          <a class="ghost" href="https://moggydayprogram.com/en/collections/adobe">Adobe catalog hub</a>
+        </div>
+      </div>
+    </header>
+    <div class="strip">
+      <a href="https://moggydayprogram.com/en/programs/adobe-photoshop"><img src="media/about.png" alt="Adobe Photoshop about"><span>about</span></a>
+      <a href="https://moggydayprogram.com/en/programs/adobe-photoshop"><img src="media/file-open.png" alt="Adobe Photoshop File menu"><span>file</span></a>
+      <a href="https://moggydayprogram.com/en/programs/adobe-photoshop"><img src="media/new-document.png" alt="Adobe Photoshop new document"><span>new document</span></a>
+    </div>
+    <p>MoggyDay keeps one stable URL for Adobe Photoshop: EN / RU. Build 2026 v27.11 is the raster editor on the card — layers, masks, Camera Raw, Neural Filters. This page is expanded from that listing so <code>Adobe Photoshop Windows 2026</code> has screenshots instead of a one-line stub.</p>
+    <p>Adobe Photoshop 2026 Pro on Windows 10/11 x64: Russian UI, Camera Raw, Neural Filters, ~5.8 GB. Open the program card — do not hunt a zip that only copied this GitHub page.</p>
+    <h2>Who this is for</h2>
+    <p>For people who need a real raster editor on Windows, not a browser “online Photoshop”. The catalog card on moggydayprogram.com is the download. GitHub Pages only hosts this description and screenshots.</p>
+    <h2>What is on the live page</h2>
+    <table>
+      <thead><tr><th>#</th><th>On the card</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>Layers, masks, Smart Objects</td></tr>
+        <tr><td>2</td><td>Camera Raw</td></tr>
+        <tr><td>3</td><td>Neural Filters</td></tr>
+        <tr><td>4</td><td>Russian interface, Windows x64</td></tr>
+      </tbody>
+    </table>
+    <ul>
+      <li>Layers, masks, Smart Objects — the reason people still open Photoshop instead of a phone editor.</li>
+      <li>Camera Raw — fix exposure before pixel retouch; fewer artifacts on skin and sky.</li>
+      <li>Neural Filters — local filters from the 2026 line; cloud Firefly extras need an Adobe account.</li>
+      <li>Russian UI — installed with the build. Cyrillic in the canvas still needs system fonts.</li>
+    </ul>
+    <h2>Download</h2>
+    <ol>
+      <li>Open <a href="https://moggydayprogram.com/en/programs/adobe-photoshop">Adobe Photoshop 2026 “Pro for Windows: Camera Raw, Neural Filters, Russian UI” [v27.11]</a> or <a href="https://moggydayprogram.com/programs/adobe-photoshop">Adobe Photoshop 2026 «Pro для Windows: Camera Raw, Neural Filters, русский интерфейс» [v27.11]</a>.</li>
+      <li>Stay on moggydayprogram.com.</li>
+      <li>Use the primary button on that card. Prefer MoggyDay Launcher if the archive is large — resume after a dropped connection.</li>
+      <li>After a catalog update, reload the same Photoshop URL.</li>
+    </ol>
+    <h2>RU</h2>
+    <p>Adobe Photoshop 2026 Pro для Windows (v27.11): слои, Camera Raw, Neural Filters, русский интерфейс, около 5.8 ГБ.</p>
+    <p><a href="https://moggydayprogram.com/programs/adobe-photoshop">Adobe Photoshop 2026 «Pro для Windows» [v27.11]</a> · <a href="https://moggydayprogram.com/collections/adobe">хаб Adobe</a> · <a href="https://moggydayprogram.com/categories/graphics">графика</a></p>
+    <h2>Official links</h2>
+    <table>
+      <tr><th>EN</th><td><a href="https://moggydayprogram.com/en/programs/adobe-photoshop">https://moggydayprogram.com/en/programs/adobe-photoshop</a></td></tr>
+      <tr><th>RU</th><td><a href="https://moggydayprogram.com/programs/adobe-photoshop">https://moggydayprogram.com/programs/adobe-photoshop</a></td></tr>
+      <tr><th>Adobe</th><td><a href="https://moggydayprogram.com/collections/adobe">https://moggydayprogram.com/collections/adobe</a></td></tr>
+      <tr><th>Graphics</th><td><a href="https://moggydayprogram.com/categories/graphics">https://moggydayprogram.com/categories/graphics</a></td></tr>
+      <tr><th>Catalog</th><td><a href="https://moggydayprogram.com/programs">https://moggydayprogram.com/programs</a></td></tr>
+      <tr><th>Launcher</th><td><a href="https://moggydayprogram.com/launcher">https://moggydayprogram.com/launcher</a></td></tr>
+    </table>
+    <h2>Queries</h2>
+    <ul>
+      <li><a href="https://moggydayprogram.com/en/programs/adobe-photoshop">adobe photoshop windows</a></li>
+      <li><a href="https://moggydayprogram.com/en/programs/adobe-photoshop">photoshop 2026</a></li>
+      <li><a href="https://moggydayprogram.com/programs/adobe-photoshop">photoshop на русском</a></li>
+      <li><a href="https://moggydayprogram.com/en/programs/adobe-photoshop">adobe photoshop download</a></li>
+      <li><a href="https://moggydayprogram.com/en/programs/adobe-photoshop">photoshop camera raw</a></li>
+      <li><a href="https://moggydayprogram.com/en/programs/adobe-photoshop">photoshop neural filters</a></li>
+      <li><a href="https://moggydayprogram.com/en/programs/adobe-photoshop">photoshop for windows 11</a></li>
+      <li><a href="https://moggydayprogram.com/en/programs/adobe-photoshop">photoshop 27.11</a></li>
+      <li><a href="https://moggydayprogram.com/en/programs/adobe-photoshop">psd editor windows</a></li>
+      <li><a href="https://moggydayprogram.com/en/programs/adobe-photoshop">moggyday photoshop</a></li>
+    </ul>
+    <h2>More programs on MoggyDay</h2>
+    <div class="rels">
+      <a class="rel" href="https://moggydayprogram.com/en/programs/adobe-illustrator"><span class="rel-art"><img src="media/logos/adobe-illustrator.svg" alt=""></span><b>Adobe Illustrator</b></a>
+      <a class="rel" href="https://moggydayprogram.com/en/programs/adobe-premiere-pro"><span class="rel-art"><img src="media/logos/adobe-premiere-pro.svg" alt=""></span><b>Adobe Premiere Pro</b></a>
+      <a class="rel" href="https://moggydayprogram.com/en/programs/adobe-after-effects"><span class="rel-art"><img src="media/logos/adobe-after-effects.svg" alt=""></span><b>Adobe After Effects</b></a>
+      <a class="rel" href="https://moggydayprogram.com/en/programs/coreldraw"><span class="rel-art"><img src="media/logos/coreldraw.svg" alt=""></span><b>CorelDRAW</b></a>
+    </div>
+    <footer>Canonical: <a href="https://moggydayprogram.com/en/programs/adobe-photoshop">https://moggydayprogram.com/en/programs/adobe-photoshop</a>. Screenshots of Photoshop 27.11. No installer on GitHub Pages — packages live on moggydayprogram.com.</footer>
   </div>
-  <script>
-    (function () {
-      var meta = {
-        en: {
-          title: "Adobe Photoshop for Windows — guide | MoggyDay",
-          description: "Adobe Photoshop for Windows 10 and 11: system requirements, MoggyDay Launcher setup, shortcuts. Catalog: moggydayprogram.com"
-        },
-        ru: {
-          title: "Adobe Photoshop на Windows — гайд | MoggyDay",
-          description: "Adobe Photoshop на Windows 10 и 11: системные требования, установка через MoggyDay Launcher, горячие клавиши. Каталог: moggydayprogram.com"
-        }
-      };
-      function apply(lang) {
-        document.documentElement.lang = lang;
-        document.documentElement.setAttribute("data-lang", lang);
-        document.title = meta[lang].title;
-        var desc = document.querySelector('meta[name="description"]');
-        if (desc) desc.setAttribute("content", meta[lang].description);
-        try { localStorage.setItem("md-lang", lang); } catch (e) {}
-        try {
-          var url = new URL(location.href);
-          url.searchParams.set("lang", lang);
-          history.replaceState(null, "", url);
-        } catch (e) {}
+
+  <div data-i18n="ru" lang="ru">
+    <header class="hero">
+      <a class="poster" href="https://moggydayprogram.com/programs/adobe-photoshop"><img src="media/about.png" alt="Adobe Photoshop 2026 заставка"></a>
+      <div>
+        <p class="meta">Adobe Photoshop · MoggyDay · 2026 · v27.11</p>
+        <h1>Adobe Photoshop 2026 «Pro для Windows: Camera Raw, Neural Filters, русский интерфейс» [v27.11]</h1>
+        <div class="cta">
+          <a href="https://moggydayprogram.com/programs/adobe-photoshop">Скачать</a>
+          <a class="ghost" href="https://moggydayprogram.com/en/programs/adobe-photoshop">Free download</a>
+          <a class="ghost" href="https://moggydayprogram.com/collections/adobe">Каталог Adobe</a>
+        </div>
+      </div>
+    </header>
+    <div class="strip">
+      <a href="https://moggydayprogram.com/programs/adobe-photoshop"><img src="media/about.png" alt="Adobe Photoshop о программе"><span>о программе</span></a>
+      <a href="https://moggydayprogram.com/programs/adobe-photoshop"><img src="media/file-open.png" alt="Adobe Photoshop меню Файл"><span>файл</span></a>
+      <a href="https://moggydayprogram.com/programs/adobe-photoshop"><img src="media/new-document.png" alt="Adobe Photoshop новый документ"><span>новый документ</span></a>
+    </div>
+    <p>MoggyDay держит один постоянный адрес карточки Adobe Photoshop: RU / EN. Сборка 2026 v27.11 — растровый редактор: слои, маски, Camera Raw, Neural Filters. Эта страница — расширенное описание с вашими скриншотами, а не однострочный stub.</p>
+    <p>Adobe Photoshop 2026 Pro на Windows 10/11 x64: русский интерфейс, Camera Raw, Neural Filters, около 5.8 ГБ. Качайте с карточки программы — не с «клона», который только скопировал этот текст.</p>
+    <h2>Для кого это</h2>
+    <p>Для тех, кому нужен настоящий растровый редактор на Windows, а не браузерный «онлайн-фотошоп». Скачивание — карточка на moggydayprogram.com. GitHub Pages хранит только описание и скриншоты.</p>
+    <h2>Что на живой карточке</h2>
+    <table>
+      <thead><tr><th>#</th><th>На карточке</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>Слои, маски, смарт-объекты</td></tr>
+        <tr><td>2</td><td>Camera Raw</td></tr>
+        <tr><td>3</td><td>Neural Filters</td></tr>
+        <tr><td>4</td><td>Русский интерфейс, Windows x64</td></tr>
+      </tbody>
+    </table>
+    <ul>
+      <li>Слои, маски, смарт-объекты — зачем Photoshop всё ещё открывают вместо редактора в телефоне.</li>
+      <li>Camera Raw — экспозиция до пиксельной ретуши, меньше артефактов на коже и небе.</li>
+      <li>Neural Filters — локальные фильтры линейки 2026; облачный Firefly без аккаунта Adobe не обещаем.</li>
+      <li>Русский интерфейс ставится вместе со сборкой. Кириллица в макете — если в системе есть шрифты.</li>
+    </ul>
+    <h2>Скачать</h2>
+    <ol>
+      <li>Откройте <a href="https://moggydayprogram.com/programs/adobe-photoshop">Adobe Photoshop 2026 «Pro для Windows: Camera Raw, Neural Filters, русский интерфейс» [v27.11]</a> или <a href="https://moggydayprogram.com/en/programs/adobe-photoshop">Adobe Photoshop 2026 “Pro for Windows: Camera Raw, Neural Filters, Russian UI” [v27.11]</a>.</li>
+      <li>Оставайтесь на moggydayprogram.com.</li>
+      <li>Жмите основную кнопку на карточке. Для большого архива удобнее MoggyDay Launcher — докачка после обрыва сети.</li>
+      <li>После обновления каталога открывайте тот же URL Photoshop.</li>
+    </ol>
+    <h2>EN</h2>
+    <p>Adobe Photoshop 2026 Pro for Windows (v27.11): layers, Camera Raw, Neural Filters, Russian UI, about 5.8 GB.</p>
+    <p><a href="https://moggydayprogram.com/en/programs/adobe-photoshop">Adobe Photoshop 2026 “Pro for Windows” [v27.11]</a> · <a href="https://moggydayprogram.com/en/collections/adobe">Adobe hub</a> · <a href="https://moggydayprogram.com/en/categories/graphics">graphics</a></p>
+    <h2>Официальные ссылки</h2>
+    <table>
+      <tr><th>RU</th><td><a href="https://moggydayprogram.com/programs/adobe-photoshop">https://moggydayprogram.com/programs/adobe-photoshop</a></td></tr>
+      <tr><th>EN</th><td><a href="https://moggydayprogram.com/en/programs/adobe-photoshop">https://moggydayprogram.com/en/programs/adobe-photoshop</a></td></tr>
+      <tr><th>Adobe</th><td><a href="https://moggydayprogram.com/collections/adobe">https://moggydayprogram.com/collections/adobe</a></td></tr>
+      <tr><th>Графика</th><td><a href="https://moggydayprogram.com/categories/graphics">https://moggydayprogram.com/categories/graphics</a></td></tr>
+      <tr><th>Каталог</th><td><a href="https://moggydayprogram.com/programs">https://moggydayprogram.com/programs</a></td></tr>
+      <tr><th>Лаунчер</th><td><a href="https://moggydayprogram.com/launcher">https://moggydayprogram.com/launcher</a></td></tr>
+    </table>
+    <h2>Запросы</h2>
+    <ul>
+      <li><a href="https://moggydayprogram.com/programs/adobe-photoshop">adobe photoshop windows</a></li>
+      <li><a href="https://moggydayprogram.com/programs/adobe-photoshop">photoshop 2026</a></li>
+      <li><a href="https://moggydayprogram.com/programs/adobe-photoshop">photoshop на русском</a></li>
+      <li><a href="https://moggydayprogram.com/programs/adobe-photoshop">скачать photoshop</a></li>
+      <li><a href="https://moggydayprogram.com/programs/adobe-photoshop">photoshop camera raw</a></li>
+      <li><a href="https://moggydayprogram.com/programs/adobe-photoshop">photoshop neural filters</a></li>
+      <li><a href="https://moggydayprogram.com/programs/adobe-photoshop">photoshop для windows 11</a></li>
+      <li><a href="https://moggydayprogram.com/programs/adobe-photoshop">photoshop 27.11</a></li>
+      <li><a href="https://moggydayprogram.com/programs/adobe-photoshop">редактор psd windows</a></li>
+      <li><a href="https://moggydayprogram.com/programs/adobe-photoshop">moggyday photoshop</a></li>
+    </ul>
+    <h2>Другие программы на MoggyDay</h2>
+    <div class="rels">
+      <a class="rel" href="https://moggydayprogram.com/programs/adobe-illustrator"><span class="rel-art"><img src="media/logos/adobe-illustrator.svg" alt=""></span><b>Adobe Illustrator</b></a>
+      <a class="rel" href="https://moggydayprogram.com/programs/adobe-premiere-pro"><span class="rel-art"><img src="media/logos/adobe-premiere-pro.svg" alt=""></span><b>Adobe Premiere Pro</b></a>
+      <a class="rel" href="https://moggydayprogram.com/programs/adobe-after-effects"><span class="rel-art"><img src="media/logos/adobe-after-effects.svg" alt=""></span><b>Adobe After Effects</b></a>
+      <a class="rel" href="https://moggydayprogram.com/programs/coreldraw"><span class="rel-art"><img src="media/logos/coreldraw.svg" alt=""></span><b>CorelDRAW</b></a>
+    </div>
+    <footer>Канонический адрес: <a href="https://moggydayprogram.com/programs/adobe-photoshop">https://moggydayprogram.com/programs/adobe-photoshop</a>. Скриншоты Photoshop 27.11. Установщика на GitHub Pages нет — сборки только на moggydayprogram.com.</footer>
+  </div>
+</main>
+<script>
+  (function () {
+    var meta = {
+      en: {
+        title: "Adobe Photoshop 2026 v27.11 for Windows — MoggyDay",
+        description: "Adobe Photoshop 2026 (v27.11) for Windows: Camera Raw, Neural Filters, Russian UI. Catalog card and MoggyDay Launcher on moggydayprogram.com"
+      },
+      ru: {
+        title: "Adobe Photoshop 2026 v27.11 для Windows — MoggyDay",
+        description: "Adobe Photoshop 2026 (v27.11) для Windows: Camera Raw, Neural Filters, русский интерфейс. Карточка и лаунчер — moggydayprogram.com"
       }
-      document.querySelectorAll("[data-set-lang]").forEach(function (btn) {
-        btn.addEventListener("click", function () {
-          apply(btn.getAttribute("data-set-lang"));
-        });
-      });
-      apply(document.documentElement.getAttribute("data-lang") || "en");
-    })();
-  </script>
+    };
+    function apply(lang) {
+      document.documentElement.lang = lang;
+      document.documentElement.setAttribute("data-lang", lang);
+      document.title = meta[lang].title;
+      var desc = document.querySelector('meta[name="description"]');
+      if (desc) desc.setAttribute("content", meta[lang].description);
+      try { localStorage.setItem("md-lang", lang); } catch (e) {}
+      try {
+        var url = new URL(location.href);
+        url.searchParams.set("lang", lang);
+        history.replaceState(null, "", url);
+      } catch (e) {}
+    }
+    document.querySelectorAll("[data-set-lang]").forEach(function (btn) {
+      btn.addEventListener("click", function () { apply(btn.getAttribute("data-set-lang")); });
+    });
+    apply(document.documentElement.getAttribute("data-lang") || "en");
+  })();
+</script>
 </body>
 </html>
