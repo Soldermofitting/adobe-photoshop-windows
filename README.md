@@ -4,12 +4,12 @@
 
 Adobe Photoshop · MoggyDay · 2026 · v27.11
 
-# Adobe Photoshop 2026 “Pro for Windows: Camera Raw, Neural Filters, Russian UI” [v27.11]
+# Adobe Photoshop 2026 “for Windows: Camera Raw, Neural Filters, Russian UI” [v27.11]
 
 <p>
-  <a href="https://moggydayprogram.com/programs/adobe-photoshop"><img src="docs/media/about.png" alt="Adobe Photoshop about" width="280"></a>
-  <a href="https://moggydayprogram.com/programs/adobe-photoshop"><img src="docs/media/file-open.png" alt="Adobe Photoshop File menu" width="280"></a>
-  <a href="https://moggydayprogram.com/programs/adobe-photoshop"><img src="docs/media/new-document.png" alt="Adobe Photoshop new document" width="280"></a>
+  <a href="https://moggydayprogram.com/programs/adobe-photoshop"><img src="docs/media/shot-1.jpg" alt="Adobe Photoshop about" width="280"></a>
+  <a href="https://moggydayprogram.com/programs/adobe-photoshop"><img src="docs/media/shot-2.jpg" alt="Adobe Photoshop File menu" width="280"></a>
+  <a href="https://moggydayprogram.com/programs/adobe-photoshop"><img src="docs/media/shot-3.jpg" alt="Adobe Photoshop new document" width="280"></a>
 </p>
 
 MoggyDay keeps one stable URL for Adobe Photoshop: EN / RU. Build 2026 v27.11 is the raster editor on the card — layers, masks, Camera Raw, Neural Filters.
