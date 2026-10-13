@@ -1,15 +1,47 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en" data-lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Adobe Photoshop на Windows 10 и 11: системные требования, установка через MoggyDay Launcher, горячие клавиши. Каталог: moggydayprogram.com" />
-  <meta name="keywords" content="Adobe Photoshop, Photoshop Windows, Photoshop русский, графический редактор, Camera Raw, MoggyDay Launcher, moggydayprogram.com" />
-  <meta property="og:title" content="Adobe Photoshop на Windows — гайд и MoggyDay Launcher" />
-  <meta property="og:description" content="Требования, установка из каталога, советы по работе. Официальный сайт: moggydayprogram.com" />
+  <script>
+    (function () {
+      function pick() {
+        try {
+          var q = new URLSearchParams(location.search).get("lang");
+          if (q === "ru" || q === "en") return q;
+        } catch (e) {}
+        try {
+          var saved = localStorage.getItem("md-lang");
+          if (saved === "ru" || saved === "en") return saved;
+        } catch (e) {}
+        var list = [];
+        if (navigator.languages) list = list.concat(navigator.languages);
+        if (navigator.language) list.push(navigator.language);
+        if (navigator.userLanguage) list.push(navigator.userLanguage);
+        for (var i = 0; i < list.length; i++) {
+          var l = String(list[i] || "").toLowerCase();
+          if (l === "ru" || l.indexOf("ru-") === 0) return "ru";
+          if (l === "en" || l.indexOf("en-") === 0) return "en";
+        }
+        return "en";
+      }
+      var lang = pick();
+      document.documentElement.lang = lang;
+      document.documentElement.setAttribute("data-lang", lang);
+    })();
+  </script>
+  <meta name="description" content="Adobe Photoshop for Windows 10 and 11: system requirements, MoggyDay Launcher setup, shortcuts. Catalog: moggydayprogram.com" />
+  <meta name="keywords" content="Adobe Photoshop, Photoshop Windows, Photoshop Russian, graphic editor, Camera Raw, MoggyDay Launcher, moggydayprogram.com, Photoshop for Windows" />
+  <meta property="og:title" content="Adobe Photoshop for Windows — guide and MoggyDay Launcher" />
+  <meta property="og:description" content="Requirements, catalog install, workflow tips. Official site: moggydayprogram.com" />
   <meta property="og:url" content="https://moggydayprogram.com/" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="ru_RU" />
   <link rel="canonical" href="https://moggydayprogram.com/" />
-  <title>Adobe Photoshop на Windows — гайд | MoggyDay</title>
+  <link rel="alternate" hreflang="en" href="https://soldermofitting.github.io/adobe-photoshop-windows/?lang=en" />
+  <link rel="alternate" hreflang="ru" href="https://soldermofitting.github.io/adobe-photoshop-windows/?lang=ru" />
+  <link rel="alternate" hreflang="x-default" href="https://soldermofitting.github.io/adobe-photoshop-windows/" />
+  <title>Adobe Photoshop for Windows — guide | MoggyDay</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
@@ -55,54 +87,152 @@
     footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.88rem; }
     a { color: var(--accent); }
     .badge { display: inline-block; background: var(--card); border: 1px solid var(--border); padding: 0.2rem 0.55rem; border-radius: 4px; font-size: 0.75rem; margin: 0.15rem 0.25rem 0.15rem 0; color: var(--muted); }
+    .lang-switch {
+      display: flex;
+      gap: 0.4rem;
+      margin: 0 0 1.5rem;
+    }
+    .lang-switch button {
+      background: var(--card);
+      color: var(--muted);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.35rem 0.75rem;
+      font: inherit;
+      font-size: 0.85rem;
+      cursor: pointer;
+    }
+    html[data-lang="en"] .lang-switch button[data-set-lang="en"],
+    html[data-lang="ru"] .lang-switch button[data-set-lang="ru"] {
+      color: #001018;
+      background: var(--accent);
+      border-color: var(--accent);
+    }
+    [data-i18n] { display: none; }
+    html[data-lang="ru"] [data-i18n="ru"],
+    html[data-lang="en"] [data-i18n="en"] { display: block; }
   </style>
 </head>
 <body>
   <div class="wrap">
-    <h1>Adobe Photoshop на Windows</h1>
-    <p class="lead">Ретушь, макеты, Camera Raw и подготовка к печати. Карточка программы, лаунчер с докачкой и зеркала RU / Intl — на официальном каталоге.</p>
-    <a class="cta" href="https://moggydayprogram.com/">Каталог и MoggyDay Launcher — moggydayprogram.com</a>
+    <nav class="lang-switch" aria-label="Language">
+      <button type="button" data-set-lang="en">English</button>
+      <button type="button" data-set-lang="ru">Русский</button>
+    </nav>
 
-    <p>
-      <span class="badge">photoshop</span>
-      <span class="badge">adobe</span>
-      <span class="badge">windows-11</span>
-      <span class="badge">image-editing</span>
-      <span class="badge">graphic-design</span>
-      <span class="badge">russian-ui</span>
-    </p>
+    <article data-i18n="en" lang="en">
+      <h1>Adobe Photoshop for Windows</h1>
+      <p class="lead">Retouch, layouts, Camera Raw, and print prep. The program card, a launcher with resume downloads, and RU / Intl mirrors live in the official catalog.</p>
+      <a class="cta" href="https://moggydayprogram.com/">Catalog and MoggyDay Launcher — moggydayprogram.com</a>
+      <p>
+        <span class="badge">photoshop</span>
+        <span class="badge">adobe</span>
+        <span class="badge">windows-11</span>
+        <span class="badge">image-editing</span>
+        <span class="badge">graphic-design</span>
+      </p>
+      <h2>System requirements</h2>
+      <table>
+        <tr><th>Item</th><th>Minimum</th><th>Comfortable</th></tr>
+        <tr><td>OS</td><td>Windows 10 x64</td><td>Windows 11 x64</td></tr>
+        <tr><td>RAM</td><td>8 GB</td><td>16–32 GB</td></tr>
+        <tr><td>Disk</td><td>SSD, free space for the app</td><td>Separate scratch disk</td></tr>
+        <tr><td>GPU</td><td>DirectX 12</td><td>4+ GB VRAM</td></tr>
+      </table>
+      <h2>Install with the launcher</h2>
+      <ol>
+        <li>Open <a href="https://moggydayprogram.com/">https://moggydayprogram.com/</a>.</li>
+        <li>Download and install <strong>MoggyDay Launcher</strong>.</li>
+        <li>Find <strong>Adobe Photoshop</strong> in the catalog.</li>
+        <li>Download the package (resume is supported) and follow the steps on the site card.</li>
+      </ol>
+      <h2>Why the launcher</h2>
+      <ul>
+        <li>One search across the catalog (Photoshop, Illustrator, Office, and more)</li>
+        <li>Download queue and pause</li>
+        <li>RU / Intl mirrors in Settings</li>
+      </ul>
+      <p>Use of catalog software must follow your country’s laws and the rights holders’ licenses.</p>
+      <footer>
+        Official catalog and launcher site:
+        <a href="https://moggydayprogram.com/">https://moggydayprogram.com/</a>
+        · GitHub Pages is a description mirror; builds come only from the MoggyDay site.
+      </footer>
+    </article>
 
-    <h2>Системные требования</h2>
-    <table>
-      <tr><th>Параметр</th><th>Минимум</th><th>Комфорт</th></tr>
-      <tr><td>ОС</td><td>Windows 10 x64</td><td>Windows 11 x64</td></tr>
-      <tr><td>ОЗУ</td><td>8 ГБ</td><td>16–32 ГБ</td></tr>
-      <tr><td>Диск</td><td>SSD, свободное место под программу</td><td>Отдельный scratch disk</td></tr>
-      <tr><td>GPU</td><td>DirectX 12</td><td>4+ ГБ VRAM</td></tr>
-    </table>
-
-    <h2>Установка через лаунчер</h2>
-    <ol>
-      <li>Откройте <a href="https://moggydayprogram.com/">https://moggydayprogram.com/</a>.</li>
-      <li>Скачайте и установите <strong>MoggyDay Launcher</strong>.</li>
-      <li>Найдите <strong>Adobe Photoshop</strong> в каталоге.</li>
-      <li>Загрузите дистрибутив (поддерживается докачка) и выполните шаги с карточки на сайте.</li>
-    </ol>
-
-    <h2>Зачем лаунчер</h2>
-    <ul>
-      <li>Единый поиск по каталогу (Photoshop, Illustrator, Office и др.)</li>
-      <li>Очередь загрузок и пауза</li>
-      <li>Зеркала RU / Intl в настройках</li>
-    </ul>
-
-    <p>Использование программ из каталога должно соответствовать законам вашей страны и лицензиям правообладателей.</p>
-
-    <footer>
-      Официальный сайт каталога и лаунчера:
-      <a href="https://moggydayprogram.com/">https://moggydayprogram.com/</a>
-      · GitHub Pages — зеркало описания; сборки только с сайта MoggyDay.
-    </footer>
+    <article data-i18n="ru" lang="ru">
+      <h1>Adobe Photoshop на Windows</h1>
+      <p class="lead">Ретушь, макеты, Camera Raw и подготовка к печати. Карточка программы, лаунчер с докачкой и зеркала RU / Intl — на официальном каталоге.</p>
+      <a class="cta" href="https://moggydayprogram.com/">Каталог и MoggyDay Launcher — moggydayprogram.com</a>
+      <p>
+        <span class="badge">photoshop</span>
+        <span class="badge">adobe</span>
+        <span class="badge">windows-11</span>
+        <span class="badge">image-editing</span>
+        <span class="badge">graphic-design</span>
+        <span class="badge">russian-ui</span>
+      </p>
+      <h2>Системные требования</h2>
+      <table>
+        <tr><th>Параметр</th><th>Минимум</th><th>Комфорт</th></tr>
+        <tr><td>ОС</td><td>Windows 10 x64</td><td>Windows 11 x64</td></tr>
+        <tr><td>ОЗУ</td><td>8 ГБ</td><td>16–32 ГБ</td></tr>
+        <tr><td>Диск</td><td>SSD, свободное место под программу</td><td>Отдельный scratch disk</td></tr>
+        <tr><td>GPU</td><td>DirectX 12</td><td>4+ ГБ VRAM</td></tr>
+      </table>
+      <h2>Установка через лаунчер</h2>
+      <ol>
+        <li>Откройте <a href="https://moggydayprogram.com/">https://moggydayprogram.com/</a>.</li>
+        <li>Скачайте и установите <strong>MoggyDay Launcher</strong>.</li>
+        <li>Найдите <strong>Adobe Photoshop</strong> в каталоге.</li>
+        <li>Загрузите дистрибутив (поддерживается докачка) и выполните шаги с карточки на сайте.</li>
+      </ol>
+      <h2>Зачем лаунчер</h2>
+      <ul>
+        <li>Единый поиск по каталогу (Photoshop, Illustrator, Office и др.)</li>
+        <li>Очередь загрузок и пауза</li>
+        <li>Зеркала RU / Intl в настройках</li>
+      </ul>
+      <p>Использование программ из каталога должно соответствовать законам вашей страны и лицензиям правообладателей.</p>
+      <footer>
+        Официальный сайт каталога и лаунчера:
+        <a href="https://moggydayprogram.com/">https://moggydayprogram.com/</a>
+        · GitHub Pages — зеркало описания; сборки только с сайта MoggyDay.
+      </footer>
+    </article>
   </div>
+  <script>
+    (function () {
+      var meta = {
+        en: {
+          title: "Adobe Photoshop for Windows — guide | MoggyDay",
+          description: "Adobe Photoshop for Windows 10 and 11: system requirements, MoggyDay Launcher setup, shortcuts. Catalog: moggydayprogram.com"
+        },
+        ru: {
+          title: "Adobe Photoshop на Windows — гайд | MoggyDay",
+          description: "Adobe Photoshop на Windows 10 и 11: системные требования, установка через MoggyDay Launcher, горячие клавиши. Каталог: moggydayprogram.com"
+        }
+      };
+      function apply(lang) {
+        document.documentElement.lang = lang;
+        document.documentElement.setAttribute("data-lang", lang);
+        document.title = meta[lang].title;
+        var desc = document.querySelector('meta[name="description"]');
+        if (desc) desc.setAttribute("content", meta[lang].description);
+        try { localStorage.setItem("md-lang", lang); } catch (e) {}
+        try {
+          var url = new URL(location.href);
+          url.searchParams.set("lang", lang);
+          history.replaceState(null, "", url);
+        } catch (e) {}
+      }
+      document.querySelectorAll("[data-set-lang]").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          apply(btn.getAttribute("data-set-lang"));
+        });
+      });
+      apply(document.documentElement.getAttribute("data-lang") || "en");
+    })();
+  </script>
 </body>
 </html>
