@@ -2,6 +2,10 @@
 
 **Language / Язык:** the [GitHub Pages site](https://soldermofitting.github.io/adobe-photoshop-windows/) picks English or Russian from the browser. Switch: [English](https://soldermofitting.github.io/adobe-photoshop-windows/?lang=en) · [Русский](https://soldermofitting.github.io/adobe-photoshop-windows/?lang=ru)
 
+<p>
+  <a href="https://moggydayprogram.com/programs/adobe-photoshop"><img src="docs/media/preview.jpg" alt="Photoshop preview" width="640"></a>
+</p>
+
 Adobe Photoshop · MoggyDay · 2026 · v27.11
 
 # Adobe Photoshop 2026 “for Windows: Camera Raw, Neural Filters, Russian UI” [v27.11]
